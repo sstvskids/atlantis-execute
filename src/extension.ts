@@ -26,7 +26,7 @@ function isValidEditor(editor?: vscode.TextEditor) {
 }
 
 function executeScript(script: string) {
-	if (ws.clients.size === 0) return vscode.window.showErrorMessage("Oxygen U websocket is not connected.");
+	if (ws.clients.size === 0) return vscode.window.showErrorMessage("Atlantis websocket is not connected.");
 
 	for (const client of ws.clients)
 		client.send(script)
@@ -39,9 +39,9 @@ export function activate(context: vscode.ExtensionContext) {
 
 	if (!statusBarItem) {
 		statusBarItem = Object.assign(vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left), {
-			command: 'o2u-execute.execute',
+			command: 'atlantis-execute.execute',
 			tooltip: 'Executes the script from your active editor',
-			text: '$(debug-start) O2U Execute'
+			text: '$(debug-start) Atlantis Execute'
 		});
 
 		isValidEditor(vscode.window.activeTextEditor);
@@ -49,7 +49,7 @@ export function activate(context: vscode.ExtensionContext) {
 		context.subscriptions.push(statusBarItem);
 	}
 
-	console.log('Oxygen U Execute has been activated');
+	console.log('Atlantis Execute has been activated');
 
 	context.subscriptions.push(vscode.commands.registerCommand('o2u-execute.execute', () => {
 		const script = vscode.window.activeTextEditor?.document.getText();
