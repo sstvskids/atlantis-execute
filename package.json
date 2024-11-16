@@ -1,11 +1,11 @@
 {
 	"name": "atlantis-execute",
-	"displayName": "Atlantis Execute Extension",
-	"description": "Executes the code from your Visual Studio Code's current tab",
+	"displayName": "Atlantis-VSCode Execution",
+	"description": "Executes LuaU code from VSC using a websocket to communicate with Atlantis.",
 	"icon": "atlantis.png",
 	"author": "kaisei-kto",
 	"publisher": "sstvskids",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.95.0"
 	},
