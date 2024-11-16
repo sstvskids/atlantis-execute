@@ -1,16 +1,16 @@
 {
-	"name": "oxygen-u-execute",
-	"displayName": "Oxygen U Execute Extension",
+	"name": "atlantis-execute",
+	"displayName": "Atlantis Execute Extension",
 	"description": "Executes the code from your Visual Studio Code's current tab",
 	"icon": "oxygen-u.png",
 	"author": "kaisei-kto",
-	"publisher": "kaisei-kto",
+	"publisher": "sstvskids",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
 	"repository": {
-		"url": "https://github.com/kaisei-kto/oxygen-u-execute.git"
+		"url": "https://github.com/sstvskids/atlantis-execute.git"
 	},
 	"categories": [
 		"Other"
