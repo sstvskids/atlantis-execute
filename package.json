@@ -5,9 +5,9 @@
 	"icon": "atlantis.png",
 	"author": "kaisei-kto",
 	"publisher": "sstvskids",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.95.0"
 	},
 	"repository": {
 		"url": "https://github.com/sstvskids/atlantis-execute.git"
@@ -23,11 +23,11 @@
 		"commands": [
 			{
 				"command": "atlantis-execute.execute",
-				"title": "O2U: Execute Script"
+				"title": "Atlantis: Execute Script"
 			},
 			{
 				"command": "atlantis-execute.executeFile",
-				"title": "O2U: Execute File"
+				"title": "Atlantis: Execute File"
 			}
 		],
 		"menus": {
@@ -59,7 +59,7 @@
 		"@types/glob": "^7.2.0",
 		"@types/mocha": "^9.1.0",
 		"@types/node": "14.x",
-		"@types/vscode": "^1.60.0",
+		"@types/vscode": "^1.95.0",
 		"@types/ws": "^8.5.3",
 		"@typescript-eslint/eslint-plugin": "^5.16.0",
 		"@typescript-eslint/parser": "^5.16.0",
