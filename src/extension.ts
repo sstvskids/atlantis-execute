@@ -51,7 +51,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	console.log('Atlantis Execute has been activated');
 
-	context.subscriptions.push(vscode.commands.registerCommand('o2u-execute.execute', () => {
+	context.subscriptions.push(vscode.commands.registerCommand('atlantis-execute.execute', () => {
 		const script = vscode.window.activeTextEditor?.document.getText();
 
 		if (typeof script === 'string') {
@@ -59,7 +59,7 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	}));
 
-	context.subscriptions.push(vscode.commands.registerCommand('o2u-execute.executeFile', (data) => {
+	context.subscriptions.push(vscode.commands.registerCommand('atlantis-execute.executeFile', (data) => {
 		if (typeof data === 'object' && 'fsPath' in data) {
 			executeScript(readFileSync(data.fsPath, 'utf8'));
 		}
