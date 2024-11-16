@@ -22,11 +22,11 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "o2u-execute.execute",
+				"command": "atlantis-execute.execute",
 				"title": "O2U: Execute Script"
 			},
 			{
-				"command": "o2u-execute.executeFile",
+				"command": "atlantis-execute.executeFile",
 				"title": "O2U: Execute File"
 			}
 		],
@@ -34,14 +34,14 @@
 			"editor/context": [
 				{
 					"when": "editorLangId == lua || resourceExtname == .lua || resourceExtname == .luau",
-					"command": "o2u-execute.execute",
+					"command": "atlantis-execute.execute",
 					"group": "navigation"
 				}
 			],
 			"explorer/context": [
 				{
 					"when": "editorLangId == lua || resourceExtname == .lua || resourceExtname == .luau",
-					"command": "o2u-execute.executeFile",
+					"command": "atlantis-execute.executeFile",
 					"group": "navigation"
 				}
 			]
